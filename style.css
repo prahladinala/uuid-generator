@@ -1,0 +1,32 @@
+.hero {
+  background-image: linear-gradient(to right, #ff9f4a, #ff3c83);
+  color: #fff;
+  padding-top: 25px;
+  padding-bottom: 80px;
+}
+#refreshme {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mybtn {
+  background-image: linear-gradient(to right, #ff9f4a, #ff3c83);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.mybtn:hover {
+  background-image: linear-gradient(to right, #ffa95c, #ff639c);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.mybtn:focus {
+  background-image: linear-gradient(to right, #ffa95c, #ff639c);
+  color: #fff;
+  border: 1px solid #fff;
+}

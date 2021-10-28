@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>UUID Generator</title>
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <section class="hero pt-3 px-3">
+            <div class="container">
+                <h2 class="text-center pt-5">Online UUID Generator</h2>
+
+                <form>
+                    <div class="form-row align-items-center mt-5">
+
+                        <div class="col">
+                            <label class="sr-only" for="uuidInput">UUID</label>
+                            <div class="input-group mb-2">
+
+                                <input type="text" class="form-control" id="uuidInput" placeholder="UUID" readonly>
+
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-dark" type="button" id="copyTextForMe"><i
+                                            class="far fa-copy"></i> Copy</button>
+                                    <!-- <div class="input-group-text"><i class="far fa-copy"></i></div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-auto">
+                    <button type="submit" class="btn btn-dark mb-2"></button>
+                </div> -->
+                    </div>
+                </form>
+
+                <p id="refreshme">Refresh the page to generate a new UUID</p>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Generate Bulk UUID</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row align-items-center">
+                                    <div class="col-auto">
+                                        <p>How many?</p>
+                                    </div>
+                                    <div class="col">
+                                        <label class="sr-only" for="userNum">How many?</label>
+                                        <div class="input-group mb-2">
+
+                                            <input type="number" class="form-control" id="userNum"
+                                                placeholder="How many?" value="1">
+
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-auto">
+                                    <button class="btn btn-dark btn-sm btn-block">Download File</button>
+                                </div> -->
+                                </div>
+                                <button type="button" class="btn btn-light mb-2 btn-block mybtn"
+                                    id="getUUIDs">Generate</button>
+                                <ul class="list-group list-group-flush" id="uuidList">
+
+                                </ul>
+                                <button class="btn btn-dark btn-sm btn-block disabled" id="downloadUuid">Download As a
+                                    File</button>
+                                <input type="hidden" id="myHiddenText">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 mt-4 mt-md-0">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>What is UUID?</h3>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Universally unique identifier (UUID)
+                                </p>
+
+                            </blockquote>
+
+                            <p>It is a 128-bit label used for information in computer systems.</p>
+                            <p>When generated according to the standard methods, UUIDs are, for practical purposes,
+                                unique. Their uniqueness does not depend on a central registration authority or
+                                coordination between the parties generating them, unlike most other numbering schemes.
+                                While the probability that a UUID will be duplicated is not zero, it is close enough to
+                                zero to be negligible. The probability of a UUID being duplicated is at most
+                                2<sup>-128</sup>
+                                (1 in 18<sup>38</sup>).
+
+                            </p>
+
+                            <footer class="blockquote-footer"><cite title="Source Title">Wikipedia
+                                </cite></footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
